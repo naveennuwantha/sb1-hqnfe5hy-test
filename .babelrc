@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "targets": {
+            "node": "current"
+          },
+          "modules": false
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["react-native-web", { "commonjs": false }],
+    "@babel/plugin-proposal-private-property-in-object",
+    "@babel/plugin-proposal-private-methods",
+    "@babel/plugin-proposal-class-properties"
+  ]
+} 
